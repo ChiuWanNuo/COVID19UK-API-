@@ -55,6 +55,8 @@ class MainViewController: UIViewController {
                                 self.negativenumberLabel.text = "\(negativenumber)"
                                 self.curednumberLabel.text = "\(curednumber)"
                                 self.seriousnumderLabel.text = "\(seriousnumber)"
+                                self.postrateLabel.text = String(format: "%.2f", Double(Double(curednumber) / Double(testednumber) * 100)) + "%"
+                                self.mortautyLabel.text = String(format: "%.2f", Double(Double(deathnumber) / Double(confirmednumber) * 100)) + "%"
                           
                             }
                        }
